@@ -1,0 +1,52 @@
+{{> head}}
+{{> navbar}}
+
+<!-- content -->
+    <div class="formAdd">
+        <div class="container">
+
+            <form method="post" id="formtambah" enctype="multipart/form-data">
+                <h1>Tambah Kabupaten</h1>
+                <div class="form-group">
+                  <label for="nama">Nama Provinsi</label>
+                  <input type="text" name="nama" class="form-control" id="nama" placeholder="Nama Provinsi">
+                </div>
+                <div class="form-group">
+                  <label for="provinsi">Provinsi</label>
+                  <select class="form-control" id="provinsi" name="provinsi">
+                    <option value="">--Pilih Provinsi--</option>
+                    {{#each kabupaten}}
+                      <option value="{{this.id}}">{{this.nama}}</option>
+                    {{/each}}
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="diresmikan">Diresmikan</label>
+                  <input type="number"  name="diresmikan" class="form-control" id="diresmikan" placeholder="tahun diresmikan">
+                </div>
+                <div class="form-group">
+                    <div class="file-input-group text-start">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                            </div>
+                            <div class="custom-file">
+                              <input type="file"  hidden id="file" name="image" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" onchange="handleChange()">
+                              <label for="file" class="custom-file-label input-image" for="inputGroupFile01">Pilih File</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="preview-thumbnail" class="text-start"></div>
+                </div>
+                
+                <div class="form-group button text-center">
+                    <button type="submit" class="btn">Tambah</button>
+                    <button type="reset" class="btn">reset</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+<!-- ending content -->
+
+{{> footer}}

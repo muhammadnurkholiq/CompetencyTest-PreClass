@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #393E46 !important;
+}
+
+/* navbar  */
+.navbar {
+    background-color: #161616;
+}
+
+.navbar .btn {
+    background-color: #D89216;
+    font-weight: 700;
+}
+/* ending navbar  */
+
+/* content */
+.content .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.content .card {
+    max-width: 250px;
+    min-width: 250px;
+    margin-top: 5%;
+}
+
+.card-heading {
+    height: 200px;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.card-heading img {
+    width: 150px;
+    height: 150px;
+    margin: 8% auto;
+
+}
+/* ending content */
+
+/* form */
+.formAdd form {
+    padding: 20px;
+    background-color: white;
+    width: 70%;
+    margin: 5% auto;
+    border-radius: 20px;
+}
+
+.formAdd form h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+
+.formAdd .button button{
+    width: 150px;
+    padding: 5px;
+    color: white;
+    background-color: #D89216;
+    font-weight: 700;
+}
+
+.button button:active {
+    transform: translateY(2px);
+}
+/* ending form */
+
+/* kabupaten */
+.kabupaten {
+    margin-top: 5%;
+}
+
+.table {
+    background-color: white;
+}
+
+.head {
+    background-color: #D89216;
+    font-weight: 800;
+    color: white;
+}
+
+.table p{
+    padding-top: 30px;
+}
+
+.table img {
+    width: 3.5rem;
+    margin-top: 5px;
+}
+
+.btn1 {
+    padding: 8px 15px;
+    color: white;
+}
+
+.btn-edit {
+    background-color: rgb(25, 216, 57);
+}
+
+.btn-delete {
+    background-color: red;
+}
+
+.btn-edit:hover {
+    cursor: pointer;
+    background-color: rgb(0, 182, 30);
+    text-decoration: none;
+    color: white;
+}
+
+.btn-delete:hover {
+    cursor: pointer;
+    background-color: rgb(196, 0, 0);
+    text-decoration: none;
+    color: white;
+}
+/* ending kabupaten */
+
+/* footer */
+.footer {
+    color: white;
+    margin-top: 5%;
+    text-align: center;
+}
+/* ending footer */

@@ -1,0 +1,30 @@
+{{> head}}
+{{> navbar}}
+
+<!-- content -->
+    <div class="content">
+        <div class="container">
+
+            {{#each content}}
+            <div class="card">
+                <div class="card-heading">
+                    <img src="{{this.photo}}" class="card-img-top" alt="Logo Jawa Barat">
+                </div>
+                <div class="card-body">
+                    <div class="card-body text-center">
+                    <h5 class="card-title">{{this.nama}}</h5>
+                    <p class="card-text">{{this.diresmikan}}</p>
+                    <input type="hidden" name="id" value="{{this.id}}">
+                    <a href="/content/kabupaten{{this.id}}" class="btn btn-primary">Detail</a>
+                    <br>
+                    <br>
+                    <a href="/content/delete_provinsi{{this.id}}" class="btn btn-danger">Hapus</a>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+    <!-- ending content -->
+
+{{> footer}}

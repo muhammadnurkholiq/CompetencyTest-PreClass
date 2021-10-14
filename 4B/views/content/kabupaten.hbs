@@ -1,0 +1,36 @@
+{{> head}}
+{{> navbar}}
+
+<!-- content -->
+    <div class="kabupaten">
+        <div class="container">
+
+            <table class="table text-center"">
+                <thead class="head">
+                  <tr>
+                    <th scope="col">Nama</th>
+                    <th scope="col">Tahun diresmikan</th>
+                    <th scope="col">Photo</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    {{#each kabupaten}}
+                    <tr class="tkabupaten">
+                        <td><p>{{this.nama}}</p></td>
+                        <td><p>{{this.diresmikan}}</p></td>
+                        <td><img src="{{this.photo}}"></td>
+                        <td class="action">
+                            <br>
+                            <a href="/content/edit_kabupaten{{this.id}}" class="btn1 btn-edit">Ubah</a>
+                            <a href="/content/delete_kabupaten{{this.id}}" class="btn1 btn-delete">Hapus</a>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- ending content -->
+
+{{> footer}}
